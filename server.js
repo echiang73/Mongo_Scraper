@@ -36,6 +36,9 @@ app.get("/scrape", function(req, res) {
       result.title = $(this)
         .parent()
         .attr("title");
+      result.summary = $(this)
+        .find("em")
+        .text();
       result.imageurl = $(this)
         .parent()
         .find("img")
