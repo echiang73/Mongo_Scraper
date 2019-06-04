@@ -81,14 +81,12 @@ All the recommended files and directories should look like the following structu
 ## Author
 * Eddie Chiang
 * Click on the deployed app on Heroku!
-https://tucsonburger.herokuapp.com/
+https://medicalnewstoday.herokuapp.com/
 
 * Click on the GitHub link to view code!
 https://github.com/echiang73/Mongo_Scraper
 
 
-## Here are the previews of the web application:
+## Here is the preview of the web application:
 
 ![](public/assets/images/webpreview.gif "gif")
-
-![](public/assets/images/mobilepreview.gif "gif")
