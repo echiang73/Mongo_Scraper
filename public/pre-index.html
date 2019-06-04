@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/jpg" href="images/echiang-brand.png" />
+  <title>Scraping Cancer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Note Scraper</h1>
+    <h2><i>If you can do this...the homework should be no problem.</i></h2>
+    <div id="images"></div>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="https://www.medicalnewstoday.com/categories/colorectal_cancer">MedicalNewsToday Scraper</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://localhost:3000/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/saved">Saved Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <div class="overlay">
+    </div>
+    <div class="background-image">
+    </div>
+    <div class="caption">
+      <h1>Mongo Scraper</h1>
+      <p>Colorectal Cancer News</p>
+      <p>MedicalNewsToday Edition</p>
+    </div>
+  </div>
+  <div class="container-fluid article-container">
+    <div class="card">
+      <div class="card-header">
+        <h3><a class="article-link" target="_blank" rel="noopener noreferrer"
+            href="https://www.nytimes.com/2019/05/24/opinion/child-care-crisis.html">How to End the Child-Care
+            Crisis</a><a class="btn btn-success save">Save Article</a></h3>
+      </div>
+      <div class="card-body">A child’s first 1,000 days are a time to be seized.</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3><a class="article-link" target="_blank" rel="noopener noreferrer"
+            href="https://www.nytimes.com/2019/05/24/travel/new-york-to-tahiti-or-laos-or-nairobi-without-spending-a-fortune.html">New
+            York to Tahiti (or Laos or Nairobi) Without Spending a Fortune</a><a class="btn btn-success save">Save
+            Article</a></h3>
+      </div>
+      <div class="card-body">Some flights are trickier to book than others. For these, budget travelers need to go
+        beyond the major search engines.</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3><a class="article-link" target="_blank" rel="noopener noreferrer"
+            href="https://www.nytimes.com/2019/05/24/us/politics/jay-inslee-climate-change.html">Climate Change Is
+            Catching On With Voters. Why Isn’t Jay Inslee?Can Black Voters Propel a White Mayor to the Presidency?</a><a
+            class="btn btn-success save">Save Article</a></h3>
+      </div>
+      <div class="card-body">Bill de Blasio’s multiracial family was a campaign asset in his run for mayor of New York
+        in 2013. Can he repeat that strategy on the 2020 trail?</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>New York Times Mongo Scraper</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

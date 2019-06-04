@@ -1,0 +1,259 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* margin-bottom: 80px; */
+  /* background-image: url("../images/paper.png"); */
+  font-family: 'Raleway', sans-serif;
+}
+
+.sticky-top{
+  background-color: rgb(211, 211, 211) !important;
+}
+
+#MNT-logo{
+  width: 180px;
+}
+
+
+
+          /* .card a:not([href]):not([tabindex]).scrape-new {
+            color: #2196F3;
+          } */
+
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px; */
+  /* color: white; */
+  /* background-color: #2196f3;
+} */
+
+/* .navbar {
+  margin-bottom: 0;
+} */
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding: 0;
+  font-family: "Cormorant SC";
+  /* box-shadow: 10px 5px 20px 2px lightslategrey; */
+  z-index: -1;
+}
+
+/* .jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: auto;
+  background: linear-gradient(#333, black);
+  opacity: 0.5;
+} */
+
+.jumbotron .background-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  position: fixed;
+  z-index: -2 !important;
+}
+
+.jumbotron .caption {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  z-index: 10 !important;
+}
+
+.jumbotron .caption h1,
+.jumbotron .caption p {
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.jumbotron p {
+  font-size: 30px;
+}
+
+          .article-container {
+            padding-bottom: 25px;
+            text-align: center;
+            display: inline-block;
+            /* margin: 0 auto; */
+          }
+
+/* .card { */
+.panel {
+  border-radius: 10px;
+  border: solid 1px black;
+  box-shadow: 3px 3px 20px lightslategrey;
+  margin: 10px 0px;
+  width: 90%;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  margin: 0px 0 20px 0 auto;
+  background-image: linear-gradient(120deg, #1fc8db 0%, #2cb5e8 30%, #7458ff 75%);
+  
+}
+
+.btn-homePage{
+  border-radius: 10px 0 0 10px;
+  border: solid 1px black;
+  background-color: #7458ff;
+}
+
+.btn-savedPage {
+  border-radius: 0 10px 10px 0;
+  border: solid 1px black;
+  background-color: #7458ff;
+}
+
+.save, .delete, .notes, .note-delete, .scrape-new{
+  border: solid 1px black;
+  margin: 10px 5px 10px 5px;
+  color: white !important;
+}
+
+.navbar-header{
+  position: relative;
+}
+.scrape-new{
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  position: absolute;
+  left: 40%;
+  right: 40%;
+}
+
+/* .panel-container{
+  display: inline-block;
+  margin: 0 auto;
+} */
+
+/* .card .card-header { */
+/* .panel.panel-default .panel-heading {
+  background-color: #2196f3; */
+  /* position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px; */
+/* } */
+
+/* .card .card-header h3 { */
+/* .panel.panel.default .panel-heading h3 {
+  color: white;
+} */
+
+
+/* .panel.panel-default .panel-heading .btn{
+  float: right;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+} */
+
+
+
+          /* .card .card-header .btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+          }
+
+          .card .card-header .btn.delete {
+            right: 160px;
+          } */
+
+          /* .card .card-body { */
+/* .panel.panel-default .panel-body {
+  font-size: 16px;
+} */
+
+          /* .card .card-header .article-link {
+            color: white;
+            display: inline-block;
+            width: 80%;
+          } */
+
+
+
+
+/* .footer {
+  background-color: #2196F3;
+  color: white;
+} */
+
+
+
+/* .footer > .container > p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin: 0;
+  font-weight: 800;
+  background: #0c7cd5;
+} */
+
+/* .navbar-inverse .navbar-nav > li > a.scrape-new,
+.navbar-nav > li > a.clear {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 800;
+  color: white;
+} */
+
+/* .navbar-inverse .navbar-nav > li > a.scrape-new:hover,
+.navbar-nav > li > a.clear:hover {
+  background: #4caf50;
+} */
+
+/* .navbar-inverse .navbar-nav > li > a.scrape-new:active {
+  background: #e51c23;
+} */
+
+/* .scrape-new {
+  cursor: pointer;
+} */
+
+/* .m-top-80 {
+  margin-top: 80px;
+} */
+
+/* textarea {
+  padding: 10px;
+  resize: none; */
+  /* width: 100%; */
+/* } */
+
+/* .bootbox-body .btn {
+  float: right;
+  margin: 5px;
+} */
+
+          /* .note.list-group-item {
+            padding: 30px;
+          } */
+
+/* .note.list-group-item .btn {
+  position: relative;
+  bottom: 10px;
+} */

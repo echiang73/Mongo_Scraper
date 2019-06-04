@@ -1,25 +1,45 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<nav class="navbar navbar-inverse sticky-top bg-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.medicalnewstoday.com/categories/colorectal_cancer">Mongo Scraper: <img src="assets/images/MNT-logo.png" id="MNT-logo" alt="Medical News Today"></a>
+    </div>
+    {{!-- <a class="btn btn-success scrape-new">Click to Scrape New Articles!</a> --}}
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a href="/"><button type="button" class="btn btn-secondary btn-homePage">Home/Scrape Page</button></a>
+      <a href="/saved"><button type="button" class="btn btn-secondary btn-savedPage">Saved Articles Page</button></a>
+    </div>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/jpg" href="images/echiang-brand.png" />
-  <title>Scraping Cancer</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-</head>
-
-<body>
-  <div id="wrapper">
-    <h1>Note Scraper</h1>
-    <h2><i>If you can do this...the homework should be no problem.</i></h2>
-    <div id="articles"></div>
-    <div id="notes"></div>
+    {{!-- <ul class="nav navbar-nav"> --}}
+      {{!-- <li class="active"><a href="/">Home</a></li>
+            <li><a href="/saved">Saved Articles</a></li> --}}
+      {{!-- <li><a class="btn btn-danger scrape-new">Click to Scrape New Articles!</a></li> --}}
+      {{!-- <li><a class="btn btn-danger clear">CLEAR ALL ARTICLES!</a></li> --}}
+    {{!-- </ul> --}}
   </div>
+  <a class="btn btn-success scrape-new">Click to Scrape New Articles!</a>
+</nav>
+<div class="jumbotron text-center">
+  <div class="overlay">
+  </div>
+  <div class="background-image">
+  </div>
+  <div class="caption">
+    <h1>Mongo Scraper</h1>
+    <p>Medical News Today - Colorectal Cancer Edition</p>
+  </div>
+</div>
+<div class="container-fluid article-container">
+</div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<footer class="footer">
+  <div class="container">
+    <p>Medical News Today Mongo Scraper</p>
+  </div>
+</footer>
+
+
+
+{{!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="https://www.medicalnewstoday.com/categories/colorectal_cancer">MedicalNewsToday Scraper</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -92,11 +112,19 @@
     <div class="container">
       <p>New York Times Mongo Scraper</p>
     </div>
-  </footer>
+  </footer> --}}
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
+
+<script src="../../assets/javascript/index.js"></script>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
-
-</html>
+{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script> --}}
