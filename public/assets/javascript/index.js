@@ -40,7 +40,9 @@ $(document).ready(function() {
         "<img src='" + article.imageurl +"' style='width:150px; border: solid 1px black'>",
         "</div>",
         "<div class='panel-body title-and-summary'>",
+        "<a href='" + article.link + "' style='color: white' target='blank'>",
         "<h3>", article.title,"</h3>",
+        "</a>",
         article.summary,
         "</div>",
         "</div>"
