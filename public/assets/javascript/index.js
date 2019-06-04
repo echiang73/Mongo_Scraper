@@ -49,17 +49,20 @@ $(document).ready(function() {
   function renderEmpty() {
     var emptyAlert =
     $(["<div class='alert alert-warning text-center'>",
-    "<h4>Uh Oh. Looks like we don't have any new articles.</h4>",
-    "</div>",
-    "<div class='panel panel-default'>",
-    "<div class='panel-heading text-center'>",
-    "<h3>What Would You Like To Do?</h3>",
-    "</div>",
-    "<div class='panel-body text-center'>",
-    "<h4><a class='scrape-new'>Try Scraping New Articles</a></h4>",
-    "<h4><a href='/saved'>Go to Saved Articles</a></h4>",
-    "</div>",
+    "<h4>Knowledge is Power!</h4>",
+    "<h5>Colorectal cancer is preventable, treatable, beatable - and knowledge gives you the power to make better decisions!</h5>",
+    "<h5>You have no new articles, click on the Scrape button to retrieve articles! Or view the Saved articles and take some notes!</h5>",
     "</div>"
+    // "<div class='panel panel-default'>",
+    // "<div class='alert alert-warning text-center'>",
+    // "<h5>Colorectal cancer is preventable, treatable, beatable - and knowledge gives you the power to make better decisions!</h5>",
+    // "</div>",
+    // "<div class='panel-body text-center'>",
+    
+    // "<h4><a class='scrape-new'>Try Scraping New Articles</a></h4>",
+    // "<h4><a href='/saved'>Go to Saved Articles</a></h4>",
+    // "</div>",
+    // "</div>"
     ].join(""));
     articleContainer.append(emptyAlert);
   }
@@ -75,7 +78,7 @@ $(document).ready(function() {
     .then(function(data) {
       // if (data.ok) {
         initPage();
-        bootbox.alert("<h3 class='text-center m-top-80'>" + data.message + "<h3>");
+        bootbox.alert("<h5 class='text-center m-top-80'>" + data.message + "<h5>");
       // }
     });
   }
@@ -84,7 +87,7 @@ $(document).ready(function() {
     $.get("/api/fetch")
     .then(function(data) {
       initPage();
-      bootbox.alert("<h3 class='text-center m-top-80'>" + data.message + "<h3>");
+      bootbox.alert("<h5 class='text-center m-top-80'>" + data.message + "<h5>");
     });
   }
 

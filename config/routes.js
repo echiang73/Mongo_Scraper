@@ -16,7 +16,7 @@ module.exports = function(router) {
             // console.log("fetched info: " + docs);
             if (!docs || docs.insertedCount === 0) {
                 res.json({
-                    message: "No new articles today. Check back tomorrow!"
+                    message: "No new articles to scrape today. Check back tomorrow! Or look at your saved articles."
                 });
             }
             else {
