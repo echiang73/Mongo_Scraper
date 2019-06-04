@@ -158,6 +158,24 @@ body {
   background: lightskyblue !important;
 }
 
+
+.panel-image {
+  display: inline-block;
+  /* overflow: auto; */
+  width: 20%;
+  /* height: 120px; */
+}
+.panel-btns {
+  float: left;
+  width: 20%;
+  /* height: 120px; */
+}
+.title-and-summary {
+  float: right;
+  width: 60%;
+  /* height: 120px; */
+}
+
 /* .panel-container{
   display: inline-block;
   margin: 0 auto;
