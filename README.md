@@ -1,8 +1,8 @@
 # Mongo_Scraper
-MongoDB Web Scraper: Medical News Today - Colorectal Cancer Edition. Colorectal cancer is a hereditary cancer that is responsible for over 50,000 deaths and doesn't just affect people over 50 year old. In fact, it is one of the most treatable and preventable cancer if it is detected early. Screening could save more than half of those lives! Take the first step to prevent colorectal cancer by reading up on this disease. Knowledge is <strong>POWER</strong> so use this app to educate yourself about this disease. The Mongo Scraper is a full-stack app that scrapes the Medical News Today website for colorectal cancer news and allow you to save the articles and even take notes.
+MongoDB Web Scraper: Medical News Today - Colorectal Cancer Edition. Colorectal cancer is a hereditary cancer that is responsible for over 50,000 deaths/year and doesn't just affect people over 50 year old. In fact, it is one of the most treatable and preventable cancer if it is detected early. Screening could save more than half of those lives! Take the first step to prevent colorectal cancer by reading up on this disease. Knowledge is <strong>POWER</strong> so use this app to educate yourself about this disease. The Mongo Scraper is a full-stack app that scrapes the Medical News Today website for colorectal cancer news and allow you to save the articles and even take notes. This app was built in honor of my mother-in-law who is a two-time survivor of colorectal cancer.
 
 ## Technical overview
-This full-stack application utilizes the Model/View/Controller (MVC) design pattern in which the Controller serve as the interface to handle the logic and routing between Model or the application database core and View to dynamically render HTML content in response to the user/client requests. Specifically, the app is built with Axios and Cheerio to scrape a website, then Node.js, and Express.js to handle the logic. Mongoose model provides an interface to the database for Create, Read, Update and Delete (CRUD) operations in the Mongo database (mongoDB). Then Express-Handlebars template is used to retrive information to dynamically build HTML pages to display the content back to the client.  The app is deployed live on Heroku, but you can clone or download the code from GitHub to run the server codes on your localhost.
+This full-stack application utilizes the Model/View/Controller (MVC) design pattern in which the Controller serve as the interface to handle the logic and routing between Model or the application database core and View to dynamically render HTML content in response to the user/client requests. Specifically, the app is built with Axios and Cheerio to scrape a website, then Node.js, and Express.js to handle the logic. Mongoose model provides an interface to the database for Create, Read, Update and Delete (CRUD) operations in the Mongo database (mongoDB). Then Express-Handlebars template is used to retrive information to dynamically build HTML pages to display the content back to the client.  The app is deployed live on Heroku, but you can clone or download the code from GitHub to run the server codes on your localhost. In your terminal, just make sure you change the directory to the server.js file and first run `npm install` to load the required node modules from the package.json, then type `node server.js` to run.
 
 ## Built with or topics covered
 * HTML5
@@ -11,7 +11,7 @@ This full-stack application utilizes the Model/View/Controller (MVC) design patt
 * jQuery
 * Model View Controller (MVC)
 * MongoDB
-* Mongoose
+* Mongoose Object Data Modeling (ODM)
 * Express.js
     * HTTP Requests (GET, POST)
     * Routes and static content
